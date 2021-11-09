@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="See where the differences are in your text documents">
+        <meta name="author" content="Jānis Sokolovskis">
+        
+        <title>Zest</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-
+JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8P ARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <!-- <link href="style.css" rel="stylesheet" type="text/css" /> -->
+        <link rel="stylesheet" href="dropdown.css">
+        <link rel="stylesheet" href="api.css">
+        <link rel="stylesheet" href="CSS/buttons.css">
+        <style type="text/css">
+            @media screen and (min-width:800px) {    
+            }    
+        </style>
+        <script src="language.js"></script>
+        <script src="salidzinat.js"></script>
+        <script src="clearall.js"></script>
+    </head>
+    <body style="width:auto; align-items: center; text-align: center; background-image: linear-gradient(120deg, #333333 0%, #BFD3F4 100%);">
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <header>
+                            <h1>See where the differences are quick and easy.</h1>
+                            <h3>Compare price lists, legal documents and other</h3>
+                        </header>
+                        <nav>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>   
+                                            <div class="dropdown">
+                                                <button class="dropbtn">Dropdown</button>
+                                                <div class="dropdown-content">
+                                                    <a href="#">Izmantošanas piemēri</a>
+                                                    <a href="#">Par projektu</a>
+                                                    <a href="https://rtu.lv" target="_blank">RTU mājaslapa</a>
+                                                </div>
+                                              </div>
+                                            <div class="dropdown">
+                                                <button class="dropbtn">Home</button>
+                                            </div>
+                                            <div class="dropdown">
+                                                <a href="https://kanye.rest" target="_blank"><button class="dropbtn">Kanye Rest API</button></a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <button onclick="changeLanguage('eng')" class="engbutton"></button>
+                                            <button onclick="changeLanguage('lv')" class="latbutton"></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </nav>
+                        <hr>
+                        <main>
+                            <div>
+                                <table  align="center" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <table width="100%">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <table align="center" width="100%">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <table style="width:100%; max-width: 600px;">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td valign="top">
+                                                                                                <!--Texta ievades lauks nr1.-->
+                                                                                                <label for="original">Original</label>
+                                                                                                <textarea type="text" id="original" name="original" cols="50" style="width: 650px; height: 300px; max-width: 700px;"></textarea>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                            <td>
+                                                                <table align="center" width="100%">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <table style="width:100%; max-width: 600px;">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td valign="top">
+                                                                                                <!--Texta ievades lauks nr2.-->
+                                                                                                <label for="compareable">Compareable</label>
+                                                                                                <textarea type="text" id="compareable" name="compareable" cols="50" autocomplete="off" required oninvalid="this.setCustomValidity('Ievietojiet tekstu')" oninput="this.setCustomValidity('')" style="width: 650px; height: 300px; max-width: 700px;"></textarea>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <table align="center" width="100%">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <table>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <button onclick="salidzinat()">
+                                                                                            Salīdzināt
+                                                                                        </button>
+                                                                                    </td>
+                                                                                    <!--<td>
+                                                                                        <input type="button" value="change color" onclick="mainitKrasu();" />
+                                                                                    </td>
+                                                                                    <td>
+                                                                                        <input type="button" value="add element" onclick="pievienotElementu();" />
+                                                                                    </td>-->
+                                                                                    <td>
+                                                                                        <button onclick="iztiritFormu()">
+                                                                                            Notīrīt
+                                                                                        </button>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <table width="300px">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <div id="root"></div>
+                                                                                <script src="api.js"></script>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </main>
+                        <hr>
+                        <footer>
+                                <p>All rights reserved</p>
+                                <p>Jānis Sokolovskis <img src="img/Linkedin-icon.png" style="width: 20px;"></p>
+                        </footer>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
