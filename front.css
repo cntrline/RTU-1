@@ -5,6 +5,11 @@
     background-image:url('https://images.unsplash.com/photo-1636391594524-9afc2bbeedf2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80')
 }
 
+.h1 {
+    color: black;
+
+}
+
 .input {
     width:50%; 
     max-width: 600px;
@@ -14,7 +19,7 @@
     padding: 5px;
     background-color: #a93a3a;
     color: white;
-    margin: 10px 0px 0px 0px
+    margin: 10px 0px 0px 0px;
 }
 
 .button2 { 
@@ -33,11 +38,37 @@
 
 .footer {
     text-align: center;
+    font-size: 20px;
 
 }
 
 .linkedin {
-    width: 20px;"
+    width: 20px;
 }
 
+.contact {
+    font-size: 20px;
+}
 
+.tablefix {
+    font-size: 20px;
+    text-align: left;
+    transition: all .2s linear;
+    box-shadow: 40px 25px 95px rgba(0, 0, 0, 0.15);
+    
+}
+
+.tablefix:hover {
+    box-shadow: 40px 25px 95px rgba(0, 0, 0, 0.15);
+    filter:invert(0.8);
+    font-size: 20px;
+    transition: all .2s linear;
+    text-color:white;
+}
+
+.iframe {
+    height: 100%;
+    width: 1000px;
+    resize: both;
+    overflow: auto;
+  }

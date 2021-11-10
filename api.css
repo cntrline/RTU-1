@@ -2,10 +2,8 @@ h2 {
   text-align: center;
   padding: 1.5rem 2.5rem;
   margin: 0 0 2rem 0;
-  font-size: 1.5rem;
+  font-size: 26px;
   color: black;
-  background-image: linear-gradient(120deg, ##a93a3a 0%, #74aeda 100%);
-  /* linear-gradien(leņķis, pirmā_krāsa vieta%, otrā_krāsa vieta%, trešā_krāsa vieta%...) */
 }
 
 p {
@@ -26,7 +24,8 @@ p {
 }
 
 .card:hover {
-  box-shadow: 2px 5px 45px rgba(0, 0, 0, 0.15);
-  transform: translate3d(0, -2px, 0); /* Elementa animācijas/pārejas veids */
+  box-shadow: 40px 25px 95px rgba(0, 0, 0, 0.15);
+  transform: translate3d(0, -9px, 0); /* Elementa animācijas/pārejas veids */
   filter:invert(1);
+  font-size: 20px;
 }

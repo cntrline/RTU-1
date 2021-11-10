@@ -1,6 +1,0 @@
-+ 1. Paskatīties kā no html pareizi palaist javascript 
-  2. Kā pareizi apstrādāt html satura elemntu javascript failā
-	Apskatīties vienā no DAS video kā pareizi izveidot teksta laukuma izdzēšanas funkciju ar JS
-  3.
-
-

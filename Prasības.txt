@@ -3,12 +3,12 @@
 + 3. Lapai kājenē ir autora informācija saīsinātā formā;
 + 4. Lapai ir galvenā izvēlne ar lejupkrītošu apakšizvēlni;
 + 5. Lapai vismaz kādā daļā ir vairākas kolonnas;
-  6. Lapa ir izveidota dinamiski (izmantojam bootstrap + savs css, lai radītu nestandarta risinājumu - gan krāsas, gan izmēri);
++ 6. Lapa ir izveidota dinamiski (izmantojam bootstrap + savs css, lai radītu nestandarta risinājumu - gan krāsas, gan izmēri);
 + 7. Lapa ir vizuāli patīkami noformēta;
 + 8. Pie izvēlnes blakus atrodas valodas maiņas pogas (var nemainīt valodu, bet ir jābūt paziņojumam par to, ka ir nospiesta valodas maiņas poga);
 + 9. Lapā jābūt ievietotam kādam API pēc brīvas izvēles (piemēram, laika ziņas izvēlētajai vietai, vārda dienas, filmu apraksti);
-  10. Lapā ir jābūt vairākiem attēliem;
-  11. Lapā ir jābūt vismaz vienai noformētai tabulai;
++ 10. Lapā ir jābūt vairākiem attēliem;
++ 11. Lapā ir jābūt vismaz vienai noformētai tabulai;
   12. Lapai ir jāsastāv no vismaz 4 sadaļām - galvenā lapa, kontakti 
   (nav jābūt īstai kontaktinformācijai), praktiskie darbi un "blogs" 
   (var nosaukt savādāk - galvenais nosacījums, ka šīs sadaļas dati glabājas datubāzē vai failā);
